@@ -66,10 +66,10 @@ const Home = () => {
                   
                     <h1 id ="certificate"  class="padTop" data-aos ="fade-right">Certification</h1>
                     <div style={paddingTop}  data-aos ="fade-up"  class ="container">
-                        <CustomCard  attrib = {{title:"BEC",icon:"fa fa-certificate fa-1x",isimage:false,submenu:false,isProg:false,btnshw:true,
-                        content :"Business English Certificates",btnName :"REFNO:167IN8654107"}}/>
                         <CustomCard attrib = {{title:"NIIT",icon:"fa fa-certificate fa-1x",isimage:false,submenu:false,isProg:false,btnshw:true,
-                        content :"Advanced Java Certification.",btnName :"Good"}}/>
+                            content :"Advanced Java Certification.",btnName :"Good"}}/>
+                        <CustomCard  attrib = {{title:"BEC",icon:"fa fa-certificate fa-1x",isimage:false,submenu:false,isProg:false,btnshw:true,
+                        content :"Business English Certificates \n from \n University of Cambridge",btnName :"Vantage"}}/>
                     </div>
                     <h1 id ="objective"  class="padTop" data-aos ="fade-right">Career Objective & Experience</h1>
                     <div style={paddingTop}  data-aos ="fade-up"  class ="container">

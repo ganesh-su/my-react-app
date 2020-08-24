@@ -40,7 +40,7 @@ function SubMenuIcon(Props){
   }else if(!Props.toDisplay.btnshw){
     return false;
   }else{
-    return <a class = "card-Link" href="#">{Props.toDisplay.btnName}</a>;
+    return <a class = "card-Link" >{Props.toDisplay.btnName}</a>;
   }
 }
 
