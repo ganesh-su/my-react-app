@@ -1,0 +1,23 @@
+:root {
+    --mainColor: #1e4080;
+  }
+.glow-on-hover {
+    color: var(--mainColor);
+    text-decoration: none;
+  }
+  
+  .glow-on-hover:hover {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--mainColor);
+  }
+  
+  @supports not(-webkit-text-stroke: 2px red) {
+    .glow-on-hover:hover {
+      text-shadow:
+        3px 3px 0 var(--mainColor),
+        -1px -1px 0 var(--mainColor),
+        1px -1px 0 var(--mainColor),
+        -1px 1px 0 var(--mainColor),
+        1px 1px 0 var(--mainColor);
+    }
+  }

@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+.bodypanel {
+    font-size: 130%;
+    margin: 0;
+    padding:0;
+    display:flex;
+    justify-content: left;
+    align-items:initial;
+    font-family: 'Poppins',sans-serif;
+    min-height: 50vh;
+}
+.container{
+   
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.container .box{
+    position: relative;
+    max-width: 300px;
+    padding: 5%;
+    background: #fff;
+    box-shadow: 0 5px 15px rgpa(0,0,0,.1);
+    border-radius: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    overflow: hidden;
+    box-shadow:  0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+    white-space: pre-line;
+}
+.container .box:before{
+    content: '';
+    width: 50%;
+    height:100%;
+    position: relative;
+    top:0;
+    left:0;
+    background: rgpa(255,255,255,.2);
+}
+.container .box .icon{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 0 auto;
+    border-radius: 50%;
+    font-size: 180%;
+    font-weight: 700;
+    transition: 0.8s;
+}
+.container .box:nth-child(1) .icon {
+    box-shadow: 0 0 0 0 var(--primary-color);
+    background: var(--primary-color);
+}
+.container .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px var(--primary-color);
+}
+.container .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 #23e629;
+    background: #23e629;
+}
+.container .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px #23e629;
+    
+}
+.container .box:nth-child(3) .icon{
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+.container .box:nth-child(3):hover .icon {
+    box-shadow: 0 0 0 400px #e91e63;
+    
+}
+.container .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+.container .box:hover .content {
+    color:#fff;
+}
+.container .box .content h3{
+    font-size: 110%;
+    margin: 10px 0;
+    padding: 0;
+}
+.container .box .content p{
+    margin: 0;
+    padding: 0;
+}
+.card-Link {
+    display: inline-block;
+    padding: 10px  20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgpa(0,0,0,.2);
+}
+.fad {
+    position: relative;
+    display: table-cell;
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size:20px;
+    }
+
+.fa-1x {
+    font-size: 1em;
+    }
+.prog-prop {
+    color :  #e91e63;;
+    justify-content: left;
+    width :80px;
+}
+.padTop{
+    margin-left: 8%;
+    padding-top: 3%;
+    color:  var(--primary-color);;
+    font-size: 180%;
+    
+}
+.share-icon{
+    color : var(--primary-color);
+}
+
+.back-to-top {
+    position: relative;
+    bottom: 100px;
+    margin-Left:85%;
+    padding: 0px;
+    color : var(--primary-color);
+}
