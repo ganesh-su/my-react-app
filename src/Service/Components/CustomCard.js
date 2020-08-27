@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import NameList from './NameList';
 import './Css/CustomCard.css'
 
@@ -9,10 +8,8 @@ const hovercolor = ["#1ab2d8","#23e629","#f25288","#c16be8","#8a858c","#29281f"]
 var  i = 0;
 
 const styleObject = {
- 
   "font-size" : "30px",
-  
-}
+ }
 
 function DynamicColor() {
     i= i<color.length-1 ? ++i:0;
@@ -35,7 +32,7 @@ function SubMenuIcon(Props){
         <a class = "share-icon" href="https://www.linkedin.com/in/ganesh-kumar-s-b8334b120"><i style={styleObject} class="fa content fa-linkedin-square" ></i></a>
         <a class = "share-icon" href="https://github.com/ganesh-su"><i style={styleObject} class="fa content fa-github" ></i></a>
         <a class = "share-icon" href="https://instagram.com/ganesh.kuttan?igshid=1uqqus6ntplh9"><i style={styleObject} class="fa content fa-instagram" ></i></a>
-        <a class = "share-icon"><i style={styleObject} class="fa content fa-heart " onClick={DynamicColor}></i></a>
+        <a class = "share-icon"><i style={styleObject} class="fa content fa-heart" onClick={DynamicColor}></i></a>
       </div> 
   }else if(!Props.toDisplay.btnshw){
     return false;
@@ -82,6 +79,7 @@ function CustomCard(Props){
                 <SubMenuIcon toDisplay = {Props.attrib}/>
             </div>
           </div>
+          
         </div>
   );
 }
